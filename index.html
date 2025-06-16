@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="navbar" style="position:fixed; top:0px; width:100%;">
+        <img id="amazonlogo" src="logo1.svg" alt="amazon_logo">
+        <svg style="height:15px;color:white;margin-left:-690px" width="100%" height="100%" viewBox="0 0 24 24"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M12 22C16 18 20 14.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 14.4183 8 18 12 22Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p style="color:rgb(197, 196, 212);padding-bottom:30px;margin-left:-700px">Deliver to</p><br />
+        <p id="india"
+            style="padding-top:15px;padding-bottom:13px;margin-left:-65px;font-size:18px;font-weight: bolder;color:rgb(255, 255, 255);">
+            India</p>
+        <select id="all">
+            <option>All Department</option>
+            <option>Arts & Crafts</option>
+            <option>Automotive</option>
+            <option>Baby</option>
+            <option>Beauty & Personal Care</option>
+            <option>Books</option>
+            <option>Boys' Fashion</option>
+            <option>Computers</option>
+            <option>Deals</option>
+            <option>Digital Music</option>
+            <option>Electronics</option>
+            <option>Girls' Fashion</option>
+            <option>Health & Household</option>
+            <option>Home & Kitchen</option>
+            <option>Industrial & Scientific</option>
+            <option>Kindle Store</option>
+            <option>Luggage</option>
+            <option>Men's Fashion</option>
+            <option>Movies & TV</option>
+            <option>Music, CDs & Vinyl</option>
+        </select>
+        <input id="searchbar" placeholder="Search Amazon">
+        <button
+            style="margin-left:0;background-color:orange;border:none;outline:none;padding:19px 30px 18.5px 10px;"></button>
+        <svg style="height:20px;margin-left:-30px;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <select style="margin-left:30px;" id="langin" name="lang">
+            <option>English - EN</option>
+            <option>español - ES</option>
+            <option>العربية - AR</option>
+            <option>Deutsch - DE</option>
+            <option>עברית - HE</option>
+            <option>한국어 - KO</option>
+            <option>português - PT</option>
+            <option>中文 (简体) - ZH</option>
+            <option>中文 (繁體) - ZH</option>
+        </select>
+        <p style="color:rgb(249, 249, 250);margin-left:20px;padding-bottom:18px;">Hello,sign in,<br /></p>
+        <p style="font-weight: bolder;color:rgb(249, 249, 250);padding-top:18px;margin-left:-87px;">Accounts & Lists</p>
+
+        <p style="color:rgb(249, 249, 250);margin-left:35px;padding-bottom:18px;">Returns<br /></p>
+        <p style="font-weight: bolder;color:rgb(249, 249, 250);padding-top:18px;margin-left:-50px;">& Orders</p>
+
+        <svg height="40px" id="cartsvg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M5.00014 14H18.1359C19.1487 14 19.6551 14 20.0582 13.8112C20.4134 13.6448 20.7118 13.3777 20.9163 13.0432C21.1485 12.6633 21.2044 12.16 21.3163 11.1534L21.9013 5.88835C21.9355 5.58088 21.9525 5.42715 21.9031 5.30816C21.8597 5.20366 21.7821 5.11697 21.683 5.06228C21.5702 5 21.4155 5 21.1062 5H4.50014M2 2H3.24844C3.51306 2 3.64537 2 3.74889 2.05032C3.84002 2.09463 3.91554 2.16557 3.96544 2.25376C4.02212 2.35394 4.03037 2.48599 4.04688 2.7501L4.95312 17.2499C4.96963 17.514 4.97788 17.6461 5.03456 17.7462C5.08446 17.8344 5.15998 17.9054 5.25111 17.9497C5.35463 18 5.48694 18 5.75156 18H19M7.5 21.5H7.51M16.5 21.5H16.51M8 21.5C8 21.7761 7.77614 22 7.5 22C7.22386 22 7 21.7761 7 21.5C7 21.2239 7.22386 21 7.5 21C7.77614 21 8 21.2239 8 21.5ZM17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p style="color:rgb(249, 249, 250);font-weight:bolder">Cart</p>
+    </div>
+
+
+    <div style="background-color:rgb(54, 68, 87);height:40px;" id="seconddiv">&nbsp;
+        <svg color="white" height="25px" margin-top="5px" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+        <pre style="color: rgb(249, 249, 250);font-weight:bolder"> All </pre>
+        <pre style="color: rgb(249, 249, 250);"> Today's Deals  Customer Service  Registry  Gift Cards  Sell</pre>
+    </div>
+
+
+    <div id="div1">
+        <div class="topcont1">
+            <p style="text-align: center;font-weight:bolder;font-family: Courier;font-size:20px;">Gaming accessories</p>
+            <img width=300px" height="300px" style="margin-top: 28px;" src="https://thumbs.dreamstime.com/b/gaming-desk-computer-headphones-mouse-immersive-gaming-experience-gaming-desk-computer-headphones-mouse-274192607.jpg">
+        </div>
+
+        <div class="topcont1">
+            <p style="text-align: center;font-weight:bolder;font-family: Courier;font-size:20px;" >Get Your Game On</p>
+            <img id="gaming"
+                src="https://t3.ftcdn.net/jpg/08/82/97/32/360_F_882973219_WwP1NJA8pCUXDrxmBbaS5GveIBxGm4E1.jpg">
+        </div>
+
+        <div class="topcont1">
+            <p style="text-align: center;font-weight:bolder;font-family: Courier;font-size:20px;">New year, new supplies</p>
+            <img width=300px" height="300px" style="margin-top: 28px;" src="https://img.freepik.com/free-photo/top-view-wooden-desk-with-notebook-office-supplies_24837-170.jpg?semt=ais_incoming">
+        </div>
+
+        <div class="topcont1">
+            <p style="text-align: center;font-weight:bolder;font-family: Courier;font-size:20px;">Shop for your home essentials</p>
+            <img width=300px" height="300px" style="margin-top:5px;" src="https://t4.ftcdn.net/jpg/00/91/67/19/360_F_91671976_XbbRatJYRAIb379BxSSH9YAuF1ohwTWJ.jpg">
+        </div>
+
+        <div class="topcont2">
+            <p style="text-align: center;font-weight:bolder;font-family: Courier;font-size:20px;">Shop deals in Fashion</p>
+            <img width=300px" height="300px" style="margin-top:27.5px;" src="https://t4.ftcdn.net/jpg/06/99/37/91/360_F_699379100_Z0uxykjeYxJD2c8FjetXgn2yy9IegRua.jpg">
+        </div>
+
+        <div class="topcont2">
+            <p style="text-align: center;font-weight:bolder;font-family: Courier;font-size:20px;">Top categories in Kitchen appliances</p>
+            <img width=300px" height="300px" style="margin-top:5px;" src="https://img.freepik.com/premium-photo/3d-variety-home-appliances-concept-design_751108-12599.jpg?semt=ais_hybrid">
+        </div>
+
+        <div class="topcont2">
+            <p style="text-align: center;font-weight:bolder;font-family: Courier;font-size:20px;">New home arrivals under $50</p>
+            <img width=300px" height="300px" style="margin-top:5px;" src="https://media.istockphoto.com/id/1285437372/photo/flower-arrangement.jpg?s=612x612&w=0&k=20&c=fe3RyDzgfmETbn208Cz1whYrd4lrWANBcguBy7xSPq8=">
+        </div>
+        <div class="topcont2">
+            <p style="text-align: center;font-weight:bolder;font-family: Courier;font-size:20px;">Explore more in Sports</p>
+            <img width=300px" height="230px" style="margin-top:98px;" src="https://t3.ftcdn.net/jpg/02/63/36/96/360_F_263369603_U8IgJWdNrrdDRz5Edx0AATygzsmdY1Nt.jpg">
+        </div>
+
+        <div id="topcont3">
+            <p style="text-align: center;font-weight:bolder;font-family: Courier;font-size:20px;">Best Sellers in Computers & Accessories</p>
+            <img width=300px" height="230px"style="margin-top:50px;margin-left:50px;" src="https://t3.ftcdn.net/jpg/03/07/76/98/360_F_307769888_VePUxlieX0JyNoWTBCMHqXuTONTFa9yw.jpg">
+            <img width=300px" height="230px"style="margin-top:50px;" src="https://www.androidauthority.com/wp-content/uploads/2021/06/uniqueme-privacy-screen-guard.jpg">
+            <img width=300px" height="230px"style="margin-top:50px;" src="https://media.gettyimages.com/id/1329523014/photo/white-tablet-stylus-pen.jpg?s=612x612&w=0&k=20&c=WNHmjzJiuvHrb9e-it5foHDezybkkiFY584DdXTPDhU=">
+            <img width=300px" height="230px"style="margin-top:50px;" src="https://www.liene-life.com/cdn/shop/files/DSC7527_2093x1395_1_d18ba1e6-60d6-4991-b854-5f0b96704e54_1.jpg?v=1717579613&width=1300">
+        </div>
+    </div>
+
+    <hr><br />
+    <div id="signdev">
+        <p id="spr">See personalized recommendations</p>
+        <button id="signin">Sign-in</button><br />
+        <p id="signlink">
+        <h5>New customer?<a id="strthere" href="#">start here</a></h5>
+        </p>
+    </div>
+    <hr><br />
+    <div id="contactus">
+        <h3>Back to top</h3>
+    </div>
+    <footer>
+        <section id="sec1">
+            <p id="p1">Get to Know Us</p>
+            <p class="p2">Careers Blog<br />
+            <p class="p2"></p>About amazon<br /></p>
+            <p class="p2"></p>Investor relations<br /></p>
+            <p class="p2"></p>Amazon devices<br /></p>
+            <p class="p2"></p>Amazon science</p>
+        </section>
+        <section id="sec2">
+            <p id="p4">Make Money with Us</p>
+            <p class="p3">Sell products on Amazon<br /></p>
+            <p class="p3">Sell on Amazon Business<br /></p>
+            <p class="p3">Sell apps on Amazon<br /></p>
+            <p class="p3">Become an Affiliate<br /></p>
+            <p class="p3">Advertise Your Products<br /></p>
+            <p class="p3">Self-Publish with Us<br /></p>
+            <p class="p3">Host an Amazon Hub<br /></p>
+        </section>
+        <section id="sec3">
+            <p id="p5">Amazon Payment Products</p>
+            <p class="p6">Amazon Business Card<br />
+            <p class="p6"></p>Shop with Points<br /></p>
+            <p class="p6"></p>Reload Your Balance<br /></p>
+            <p class="p6"></p>Amazon Currency Converte<br /></p>
+        </section>
+        <section id="sec4">
+            <p id="p7">Let Us Help You</p>
+            <p class="p8">Amazon and COVID-19<br />
+            <p class="p8"></p>Your Account<br /></p>
+            <p class="p8"></p>Your Orders<br /></p>
+            <p class="p8"></p>Shipping Rates & Policies<br /></p>
+            <p class="p8"></p>Returns & Replacements<br /></p>
+            <p class="p8"></p>Manage Your Content and Devices<br /></p>
+            <p class="p8"></p>Help<br /></p>
+        </section>
+        <br /><br />
+        <hr id="bottomhr">
+        <div id="bcu"><img style="padding-left:300px;" id="amazonlogo" src="logo1.svg" alt="amazon_logo">
+            <select style="margin-left:30px;" id="languagein" name="lang">
+                <option>English - EN</option>
+                <option>español - ES</option>
+                <option>العربية - AR</option>
+                <option>Deutsch - DE</option>
+                <option>עברית - HE</option>
+                <option>한국어 - KO</option>
+                <option>português - PT</option>
+                <option>中文 (简体) - ZH</option>
+                <option>中文 (繁體) - ZH</option>
+            </select>
+            <svg style="height:15px;margin-left:-170px;" id="globe" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22M12 2C9.49872 4.73835 8.07725 8.29203 8 12C8.07725 15.708 9.49872 19.2616 12 22M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22M2.50002 9H21.5M2.5 15H21.5"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <select id="currency" name="curr">
+                <option>₹ &nbsp;- &nbsp; Indian Rupees &nbsp;- &nbsp; INR</option>
+                <option>$ &nbsp;- &nbsp; American Dollar &nbsp;- &nbsp; USD</option>
+                <option>€ &nbsp;- &nbsp; Euros &nbsp;- &nbsp; ER</option>
+                <option>¥ &nbsp;- &nbsp; Japanese Yuan &nbsp;- &nbsp; Yuan</option>
+            </select>
+            <select id="country" name="country">
+                <option>India</option>
+                <option>America</option>
+                <option>North Korea</option>
+                <option>Bangladesh</option>
+                <option>Liechtenstein</option>
+            </select>
+
+        </div>
+        <div id="footerdiv">
+            <div id="div4">
+                <a class="a1" href="#">Amazon Music<br />
+                    <p id="p9">Stream millions<br />of songs</p>
+                </a><br /><br />
+                <a class="a1" href="#">Amazon Business<br />
+                    <p id="p9">Everything For<br />Your Business</p>
+                </a><br /><br />
+                <a class="a1" href="#">IMDbPro<br />
+                    <p id="p9">Get Info<br />Entertaintment<br />Professinals Need</p>
+                </a>
+            </div>
+            <div id="div5">
+                <a class="a1" href="#" class="botdiv2">Amazon Ads<br />
+                    <p id="p9">Reach customers<br />wherever they<br />spend their time</p>
+                </a><br />
+                <a class="a1" href="#" class="botdiv2">AmazonGlobal<br />
+                    <p id="p9">Ship Orders<br />Internationally</p>
+                </a><br /><br />
+                <a class="a1" href="#" class="botdiv2">Kindle Direct Publishing
+                    <p id="p9">Indie Digital & Print Publishing<br /> Made Easy</p>
+                </a><br />
+                <a class="a1" href="#" class="botdiv2">eero WiFi
+                    <p id="p9">Stream 4K Video<br />in Every Room</p>
+                </a>
+            </div>
+            <div id="div6">
+                <a class="a1" href="#" class="botdiv2">6pm<br />
+                    <p id="p9">Score deals<br />on fashion brands</p>
+                </a><br /><br />
+                <a class="a1" href="#" class="botdiv2">Amazon Web Services
+                    <br />
+                    <p id="p9">Scalable Cloud<br />Computing Services</p>
+                </a><br />
+                <a class="a1" href="#" class="botdiv2">Prime Video Direct
+                    <p id="p9">Video Distribution<br /> Made Easy</p>
+                </a><br /><br /><br />
+                <a class="a1" href="#" class="botdiv2">Blink
+                    <p id="p9">Smart Security<br />for Every Home</p>
+                </a>
+            </div>
+            <div id="div7">
+                <a class="a1" href="#" class="botdiv2">AbeBooks<br />
+                    <p id="p9">Books, art<br />& collectibles</p>
+                </a><br /><br />
+                <a class="a1" href="#" class="botdiv2">Audible<br />
+                    <p id="p9">Listen to Books & Original<br />Audio Performances</p>
+                </a><br />
+                <a class="a1" href="#" class="botdiv2">Shopbop<p id="p9">Designer<br /> Fashion Brands</p>
+                </a><br /><br /><br />
+                <a class="a1" href="#" class="botdiv2">Neighbors App<p id="p9">Real-Time Crime<br />& Safety Alerts</p>
+                </a>
+            </div>
+            <div id="div8">
+                <a class="a1" href="#" class="botdiv2">ACX
+                    <br />
+                    <p id="p9"> Audiobook Publishing<br />Made Easy</p>
+                </a><br />
+                <a class="a1" href="#" class="botdiv2">Box Office Mojo<br />
+                    <p id="p9">Find Movie<br />Box Office Data</p>
+                </a><br /><br />
+                <a class="a1" href="#" class="botdiv2">Woot!
+                    <p id="p9">Deals and<br />Shenanigans</p>
+                </a><br /><br /><br />
+                <a class="a1" href="#" class="botdiv2">
+                    Amazon Subscription Boxes
+                    <p id="p9">Top subscription boxes-right to<br /> your door</p>
+                </a>
+            </div>
+            <div id="div9">
+                <a class="a1" href="#" class="botdiv2">Sell on Amazon<br />
+                    <p id="p9">Start a Selling Account</p>
+                </a><br /><BR />
+                <a class="a1" href="#" class="botdiv2">Goodreads
+                    <br />
+                    <p id="p9">Book reviews & recommendations</p>
+                </a><br /><br />
+                <a class="a1" href="#" class="botdiv2">Zappos
+                    <p id="p9">Shoes & Clothing</p>
+                </a><br /><br /><br /><br />
+                <a class="a1" href="#" class="botdiv2">PillPack
+                    <p id="p9">Pharmacy Simplified</p>
+                </a>
+            </div>
+            <div id="div10">
+                <a class="a1" href="#" class="botdiv2">Veeqo
+                    <br />
+                    <p id="p9">Shipping Software
+                        Inventory Management</p>
+                </a><br />
+                <a class="a1" href="#" class="botdiv2">IMDb<br />
+                    <p id="p9">
+                        Movies, TV
+                        & Celebrities
+                    </p>
+                </a><br /><br />
+                <a class="a1" href="#" class="botdiv2">Ring
+                    <br />
+                    <p id="p9">Smart Home
+                        Security Systems
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div id="bottext">
+            <a id="botlink" href="#">Conditions of Use &nbsp; &nbsp;</a><a id="botlink" href="#">Privacy Notice &nbsp;
+                &nbsp;</a><a id="botlink" href="#">Consumer Health Data Privacy Disclosure &nbsp; &nbsp;</a><a
+                id="botlink" href="#">Your Ads Privacy Choices</a>
+            <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
+</body>
+
+</html>
